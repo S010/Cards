@@ -14,7 +14,7 @@ namespace cards
                 {
                     case "":
                         deck.newDeck();
-                        //deck.shuffle();
+                        deck.shuffle();
                         //deck.dealerMenu();
                         break;
                     case "q":

@@ -33,5 +33,26 @@ namespace cards
             }
             return false;
         }
+        public void shuffle()
+        {
+            List<Card> list = deck.ToList();  //Converts stack to list for ease of use
+            int n = list.Count;
+            while(n>1)
+            {
+                n--;
+                int randomItem  = random.Next(n+1);
+                Card value = list[randomItem]; 
+                list[randomItem] = list[n];
+                list[n]= value;
+            }
+            deck = new Stack<Card>(list);
+            Console.WriteLine("\nDeck Shuffled");
+        }
+        public void deal()
+        {
+            //Removes top value of stack and returns the value in a formatted string
+            Console.WriteLine($"{deck.Peek().Value} of {deck.Peek().Suit}'s");
+            deck.Pop(); 
+        }
     }
 }
