@@ -54,5 +54,29 @@ namespace cards
             Console.WriteLine($"{deck.Peek().Value} of {deck.Peek().Suit}'s");
             deck.Pop(); 
         }
+        public void dealerMenu()
+        {
+            while(isEmpty() != true) //Checks if the stack has values inside
+            {
+                Console.WriteLine("ENTER to deal a new card | S to Shuffle | Q to Quit");
+                //This switch statement handles all user inputs , it also turns the input into lowercase for ease of use and to avoid any errors
+                switch (Console.ReadLine().ToLower())
+                { 
+                    case "":
+                        deal();
+                        break;
+                    case "s":
+                        shuffle();
+                        break;
+                    case "q":
+                        deck = new Stack<Card>(); //Resets stack so the stack doesnt contain anything, this breaks the loop
+                        break;
+                    default:
+                        break;
+                }
+                
+            }
+            
+        }
     }
 }
