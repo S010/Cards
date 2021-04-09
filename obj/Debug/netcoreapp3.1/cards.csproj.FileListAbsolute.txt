@@ -1,0 +1,4 @@
+D:\University\OOP\cards\obj\Debug\netcoreapp3.1\cards.csprojAssemblyReference.cache
+D:\University\OOP\cards\obj\Debug\netcoreapp3.1\cards.AssemblyInfoInputs.cache
+D:\University\OOP\cards\obj\Debug\netcoreapp3.1\cards.AssemblyInfo.cs
+D:\University\OOP\cards\obj\Debug\netcoreapp3.1\cards.csproj.CoreCompileInputs.cache

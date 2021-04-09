@@ -14,7 +14,7 @@ namespace cards
                 {
                     case "":
                         deck.newDeck();
-                        //deck.shuffle();
+                        deck.shuffle();
                         //deck.dealerMenu();
                         break;
                     case "q":
@@ -22,6 +22,7 @@ namespace cards
                         break;
                     default:
                         break;
+                }
         }
     }
 }
