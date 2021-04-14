@@ -15,7 +15,7 @@ namespace cards
                     case "":
                         deck.newDeck();
                         deck.shuffle();
-                        //deck.dealerMenu();
+                        deck.dealerMenu();
                         break;
                     case "q":
                         System.Environment.Exit(0);
