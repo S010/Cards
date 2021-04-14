@@ -23,6 +23,7 @@ namespace cards
                     default:
                         break;
                 }
+            }
         }
     }
 }
